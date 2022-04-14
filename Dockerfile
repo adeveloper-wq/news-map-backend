@@ -16,4 +16,4 @@ RUN python -m spacy download en_core_web_md
 
 COPY ./api /app/api
 
-CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "80"]
+CMD uvicorn api.main:app --host 0.0.0.0 --port $PORT

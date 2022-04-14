@@ -1,0 +1,13 @@
+fastapi>=0.68.0,<0.69.0
+pydantic>=1.8.0,<2.0.0
+uvicorn>=0.15.0,<0.16.0
+spacy==3.2.4
+geopy==2.2.0
+bs4==0.0.1
+requests==2.27.1
+html5lib==1.1
+cchardet==2.1.7
+lxml==4.7.1
+newspaper3k==0.2.8
+pymongo[srv]==4.1.0
+reverse_geocoder==1.5.1

@@ -8,5 +8,5 @@ For the geocoding part, first the places are being extracted using the spacy pac
 ## Develop / Run
 - copy `.env.example` to `.env` and fill out the values
 - download the [docker vscode extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) and build the image and run the container through vscode
-- to build the image and run the container without vscode do the following: `docker build -t myimage .`, `docker run -e OPEN_CAGE_KEY=... -e MAPQUEST_KEY=... -e MAPTILER_KEY=... -e GEOCODIO_KEY=... -e HERE_KEY=... -e BING_MAPS_KEY=... -e MAPBOX_TOKEN=... -e GEONAMES_USERNAME=... -e MONGODB_URL=... -e PYTHONUNBUFFERED=TRUE --name mycontainer -p 80:80 myimage`
+- to build the image and run the container without vscode do the following: `docker build -t myimage .`, `docker run --env-file .env --name mycontainer -p 80:80 myimage`
 - to stop and remove do the following: `docker stop mycontainer`, `docker rm mycontainer` 

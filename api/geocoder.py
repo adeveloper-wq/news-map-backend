@@ -56,7 +56,7 @@ class Geocoder:
                 
         self.country_from_alpha2 = dic
         
-        self.nlp_en = spacy.load('en_core_web_lg')
+        self.nlp_en = spacy.load('en_core_web_md')
         
         self.cache = {}
         

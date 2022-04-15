@@ -10,3 +10,11 @@ For the geocoding part, first the places are being extracted using the spacy pac
 - download the [docker vscode extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) and build the image and run the container through vscode
 - to build the image and run the container without vscode do the following: `docker build -t myimage .`, `docker run --env-file .env --name mycontainer -p 80:80 myimage`
 - to stop and remove do the following: `docker stop mycontainer`, `docker rm mycontainer` 
+
+## Deploy to Heroko
+- `heroku login`
+- `heroku container:login`
+- `heroku create --region eu name-of-heroku-project`
+- `heroku container:push web`
+- `heroku container:release web`
+- see logs: `heroku logs --tail`
